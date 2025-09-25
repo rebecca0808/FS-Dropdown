@@ -1,16 +1,9 @@
-# React + Vite
+# Challenge - Dropdown 组建设计
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+请实现一个通用的 Dropdown 组件，要求如下：
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Dropdown 组件需要有一个 触发器区域（例如一个按钮），点击触发器时能够切换下拉菜单的展开和收起。
+2. 下拉菜单展开时，需要渲染 Dropdown 的子元素内容。
+3. 下拉菜单中的任意交互元素（例如 <button>）在被点击时，除了执行它自身的逻辑，还需要能够 自动关闭下拉菜单。
+4. 触发器需要能够感知当前下拉菜单是否打开，例如可以根据状态显示不同的文案或图标。
+5. 组件应该保持良好的复用性和可扩展性，便于在不同场景下使用。
